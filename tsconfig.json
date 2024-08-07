@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6", // Puedes ajustar esto a "es5" o "esnext" según tus necesidades
+    "module": "commonjs", // Usa "es6" o "esnext" si estás trabajando con módulos ES6
+    "moduleResolution": "node",
+    "outDir": "./dist", // Directorio de salida para los archivos compilados
+    "rootDir": "./src", // Directorio de entrada para los archivos fuente
+    "strict": true, // Activa todas las comprobaciones estrictas
+    "esModuleInterop": true, // Permite la interoperabilidad con módulos CommonJS
+    "skipLibCheck": true, // Omite la comprobación de tipos en los archivos de declaración de biblioteca
+    "forceConsistentCasingInFileNames": true, // Asegura que el uso de mayúsculas y minúsculas en los nombres de archivo sea consistente
+    "resolveJsonModule": true, // Permite la importación de archivos JSON
+    "experimentalDecorators": true, // Activa el soporte para decoradores
+    "emitDecoratorMetadata": true // Emite metadatos de decoradores para su uso en la reflexión
+  },
+  "include": [
+    "src/**/*" // Incluye todos los archivos en el directorio src
+  ],
+  "exclude": [
+    "node_modules", // Excluye el directorio node_modules
+    "**/*.test.ts" // Excluye los archivos de prueba, si los tienes
+  ]
+}
