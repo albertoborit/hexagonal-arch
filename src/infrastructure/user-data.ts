@@ -1,12 +1,12 @@
 export const USER_DATA = [
-    [
-        "1",
-        "Dow Jones",
-        true
-    ],
-    [
-        "2",
-        "John Doe",
-        true
-    ]
+    {
+        id: "1",
+        username: "Dow Jones",
+        active: true
+    },
+    {
+        id: "2",
+        username: "John Doe",
+        active: true
+    }
 ]
