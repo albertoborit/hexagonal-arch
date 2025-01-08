@@ -1,10 +1,9 @@
-import { IDatabase } from "../../domain/database/IDatabase";
-import { IUser } from "../../domain/user/IUser";
+import { IUser } from "../../ports/UserRepository";
 import { User } from "../../domain/user/User";
 
 export class UserUseCase implements IUser {
-    constructor(private iDatabase:IDatabase){}
+    constructor(private UserRepository:IUser){}
     async getUserById(id: string): Promise<User> {
-        return await this.iDatabase.getById(id) 
+        return await this.UserRepository.getUserById(id) 
     }
 }

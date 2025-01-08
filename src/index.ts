@@ -1,5 +1,5 @@
 import express from "express"
-import { userRouter } from "./infraestructure/http/user/user-router"
+import { userRouter } from "./adapters/http/user/user-router"
 function bootstrap() {
     const app = express()
     app.use(express.json())

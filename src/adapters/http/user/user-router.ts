@@ -1,6 +1,6 @@
 import express from "express"
 import { UserController } from "./user-controller"
-import { MySQLRepository } from "../../database/MySQLRepository"
+import { MySQLRepository } from "../../../infrastructure/database/MySQLRepository"
 const userRouter = express.Router()
 
 const userController:UserController = new UserController(new MySQLRepository())
